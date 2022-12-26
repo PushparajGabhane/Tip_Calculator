@@ -1,0 +1,45 @@
+.main {
+    background: aqua;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 3%;
+}
+
+.left,
+.right {
+    padding-left: 5%;
+    background: white;
+}
+
+.tipBtn {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+#tipGiven {
+    height: 25px;
+    width: 55px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#person {
+    margin-bottom: 10px;
+}
+
+.tipbt {
+    background: green;
+    color: white;
+    height: 25px;
+    width: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#reset {
+    text-align: center;
+    height: 25px;
+    width: 100px;
+    background: red;
+    color: white;
+}

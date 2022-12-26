@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Bill</h1>
+            <input type="number" onchange="setAmount()" id="bill"><br>
+            <h3>select tip %</h3>
+            <div class="tipBtn">
+                <button onclick="handleFive()" class="tipbt">5%</button>
+                <button onclick="handleTen()" class="tipbt">10%</button>
+                <button onclick="handleFifteen()" class="tipbt">15%</button>
+                <button onclick="handleTwentyFive()" class="tipbt">25%</button>
+                <button onclick="handleFifty()" class="tipbt">50%</button>
+                <input type="number" onchange="handleCustom()" id="tipGiven">
+            </div>
+            <h3>Number of Peoples</h3>
+            <input type="number" onchange="noOfPerson()" id="person" min="1">
+        </div>
+
+        <div class="right">
+            <h2>Tip Amount</h2>
+            <h4>$ <span id="tip">0</span>.00</h4>
+            <h2>Total Cast</h2>
+            <h4>$ <span id="total">0</span>.00</h4>
+            <button onclick="resetAll()" id="reset">RESET</button>
+        </div>
+    </div>
+
+    <script src="./Javascript/index.js"></script>
+</body>
+
+</html>
